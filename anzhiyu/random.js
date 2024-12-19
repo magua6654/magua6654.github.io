@@ -1,4 +1,4 @@
-var posts=["2024/12/11/hello-world/","2024/12/16/shodan学习记录/","2024/12/16/渗透测试学习/"];function toRandomPost(){
+var posts=["2024/12/11/hello-world/","2024/12/16/渗透测试学习/","2024/12/16/shodan学习记录/"];function toRandomPost(){
     pjax.loadUrl('/'+posts[Math.floor(Math.random() * posts.length)]);
   };var friend_link_list=[];
     var refreshNum = 1;
