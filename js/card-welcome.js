@@ -76,7 +76,7 @@ const generateWelcomeMessage = (pos, dist, ipDisplay, country, prov, city) => `
 	${getTimeGreeting()}<br>
 	🎈 您的IP为：<b class="ip-address">${ipDisplay}</b><br>
     📏 您距博主约 <b>${dist}</b> 公里！<br>
-    🎀 <b>${getGreeting(country, prov, city)}</b>
+    🌈 <b>${getGreeting(country, prov, city)}</b>
 `;
 
 const addStyles = () => {
