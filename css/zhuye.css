@@ -1,0 +1,131 @@
+/* 个人信息卡片背景渐变色 */
+#aside-content>.card-widget.card-info:hover {
+    box-shadow: 0 0 30px rgba(0,0,0,.4)
+}
+
+#aside-content>.card-widget.card-info::before {
+    background: linear-gradient( -45deg,#e8d8b9,#eccec5,#a3e9eb,#bdbdf0,#eec1ea );
+    border: 0;
+    position: absolute;
+    background-size: 400% 400%;
+    -webkit-animation: Gradient 10s ease infinite;
+    -moz-animation: Gradient 10s ease infinite;
+    animation: Gradient 10s ease infinite!important
+} 
+
+/* 文章卡片封面效果 */
+#recent-posts>.recent-post-item .post_cover {
+    padding: 10px !important;
+  }
+  
+  #recent-posts>.recent-post-item .post_cover img.post_bg {
+    border-radius: 10px !important;
+  }
+  
+  #recent-posts>.recent-post-item:hover img.post_bg {
+    filter: brightness(.82) !important;
+    -webkit-transform: scale(1) !important;
+    -moz-transform: scale(1) !important;
+    -o-transform: scale(1) !important;
+    -ms-transform: scale(1) !important;
+    transform: scale(1) !important;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    transition: .3s ease-in-out
+  }
+
+/* 文章卡片及鼠标悬停卡片阴影效果 */
+#recent-posts>.recent-post-item:not(a) {
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+    transform: scale(1);
+    transition: box-shadow .5s ease, transform .5s ease
+  }
+  
+  /* 白天主页背景渐变色效果 */
+[data-theme=light] .page {
+    background: url() 26% center/cover no-repeat, linear-gradient(90deg, rgba(247, 149, 51, .1), rgba(243, 112, 85, .1) 15%, rgba(239, 78, 123, .1) 30%, rgba(161, 102, 171, .1) 44%, rgba(80, 115, 184, .1) 58%, rgba(16, 152, 173, .1) 72%, rgba(7, 179, 155, .1) 86%, rgba(109, 186, 130, .1)) !important
+}
+
+/* 白天菜单导航栏透明效果 */
+[data-theme=light] #page-header.nav-fixed #nav {
+    background: rgba(255, 255, 255, .75) !important;
+    backdrop-filter: blur(8px)
+}
+
+/* 白天子菜单导航栏透明效果 */
+[data-theme=light] #nav .menus_items .menus_item .menus_item_child {
+    background-color: rgba(255, 255, 255, .6) !important;
+    backdrop-filter: blur(7px) !important;
+    -webkit-backdrop-filter: blur(7px) !important
+}
+
+/* 设置白天页脚无背景 */
+[data-theme=light] #footer,
+[data-theme=light] #footer-wrap {
+    background: 0 0 !important;
+}
+
+/* 白天主页分类条、即刻条、页脚白色透明遮罩 */
+[data-theme="light"] #category-bar,
+[data-theme="light"] #bbTimeList,
+[data-theme=light] #footer-bar {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 头像呼吸灯 */
+[data-theme="light"] .avatar-img {
+    animation: huxi_light 4s ease-in-out infinite;
+}
+
+[data-theme="dark"] .avatar-img {
+    animation: huxi_dark 4s ease-in-out infinite;
+}
+
+@keyframes huxi_light {
+    0% {
+        box-shadow: 0px 0px 1px 1px #86d7ff;
+    }
+
+    50% {
+        box-shadow: 0px 0px 7px 7px #86d7ff;
+    }
+
+    100% {
+        box-shadow: 0px 0px 1px 1px #86d7ff;
+    }
+}
+
+@keyframes huxi_dark {
+    0% {
+        box-shadow: 0px 0px 1px 1px #7bcc85;
+    }
+
+    50% {
+        box-shadow: 0px 0px 7px 7px #7bcc85;
+    }
+
+    100% {
+        box-shadow: 0px 0px 1px 1px #7bcc85;
+    }
+}
+/* 文章擦亮效果 */
+#recent-posts > .recent-post-item:not(a)::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(to right, transparent, white, transparent);
+    transform: translateX(-200%);
+    transition: transform 0.5s linear;
+    z-index: 1;
+  }
+  #recent-posts > .recent-post-item:not(a):hover::before {
+    transform: translateX(100%) skewX(-60deg);
+  }
+
+  /* 文章擦亮效果 end */
