@@ -1,12 +1,9 @@
 @font-face {
-    /* 为载入的字体取名字(随意) */
-    font-family: 'MKSJH';	
-    /* 字体文件地址(相对或者绝对路径都可以) */
-    src: url(source/font/MaoKenShiJinHei-2.woff2);
-    /* 定义加粗样式(加粗多少) */
-    font-weight: normal;
-    /* 定义字体样式(斜体/非斜体) */
-    font-style: normal;
-    /* 定义显示样式 */
-    font-display: block;
-  }
+    font-family: 'MKSJH';  /* 定义字体名称 */
+    src: url('https://npm.onmicrosoft.cn/x1aoq1u-blog-npm@1.0.5/font/MaokenAssortedSans.ttf');
+         /*format('woff2');  /* 字体文件路径及格式 */
+         /*format('woff'),     /* 提供 WOFF 格式 */
+         /*format('truetype');  /* 提供 TTF 格式 */
+    font-weight: normal;  /* 字体粗细 */
+    font-style: normal;   /* 字体样式 */
+}
