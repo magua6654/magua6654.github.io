@@ -1,9 +1,6 @@
 @font-face {
     font-family: 'MKSJH';  /* 定义字体名称 */
-    src: url('https://npm.onmicrosoft.cn/x1aoq1u-blog-npm@1.0.5/font/MaokenAssortedSans.ttf');
-         /*format('woff2');  /* 字体文件路径及格式 */
-         /*format('woff'),     /* 提供 WOFF 格式 */
-         /*format('truetype');  /* 提供 TTF 格式 */
+    src: url('https://npm.onmicrosoft.cn/x1aoq1u-blog-npm@1.0.7/font/ZiHunBianTaoTi-2.ttf');
     font-weight: normal;  /* 字体粗细 */
     font-style: normal;   /* 字体样式 */
 }
